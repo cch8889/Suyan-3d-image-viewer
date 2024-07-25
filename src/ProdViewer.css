@@ -1,0 +1,31 @@
+.viewer-container {
+    width: 1125px;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: grab;
+    position: relative;
+  }
+  
+  .viewer-image {
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+  }
+  
+  .pause-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .dg.main {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
