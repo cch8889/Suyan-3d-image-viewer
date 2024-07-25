@@ -1,1 +1,17 @@
+/* src/App.css */
+.App {
+  text-align: center;
+}
 
+.viewer-payment-container {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px; /* Add some space between the items */
+  margin-top: 20px; /* Add some top margin if needed */
+}
+
+.payment-image {
+  width: 1000px; /* Set a fixed width for the payment component image */
+  height: auto; /* Maintain aspect ratio */
+}

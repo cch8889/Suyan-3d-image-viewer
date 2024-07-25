@@ -2,6 +2,8 @@
 import React from "react";
 import ProdViewer from "./ProdViewer";
 import "./App.css";
+import banner from "./Banner.png";
+import paymentComp from "./PaymentComp.png";
 
 function createImageArray(
   amount = 1,
@@ -24,12 +26,15 @@ const images = createImageArray(
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Welcome to the 3D Product Viewer</h1>
-        <ProdViewer images={images} />
-      </header>
-    </div>
+    <>
+      <img src={banner} alt="Banner" style={{ width: "100%" }} />
+      <div className="App">
+        <div className="viewer-payment-container">
+          <ProdViewer images={images} />
+          <img src={paymentComp} alt="paymentComp" className="payment-image" />
+        </div>
+      </div>
+    </>
   );
 }
 

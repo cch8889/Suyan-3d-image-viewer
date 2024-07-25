@@ -8,12 +8,13 @@ const Image360 = ({ images, currentIndex }) => {
 
   return (
     // Create a mesh with a plane geometry and a basic material
-    <mesh>
+    <mesh color="white">
       {/* Add plane and set size */}
       <planeGeometry
-        args={[textures[0].image.width / 100, textures[0].image.height / 100]}
+        color="white"
+        args={[textures[0].image.width / 130, textures[0].image.height / 100]}
       />
-      <meshBasicMaterial map={textures[currentIndex]} />{" "}
+      <meshBasicMaterial color="white" map={textures[currentIndex]} />{" "}
       {/* Draw image to screen */}
     </mesh>
   );
